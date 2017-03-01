@@ -1,0 +1,1 @@
+C:\Mobile App 2\HardwareInfo\HardwareInfo\HardwareInfo.csproj;x86
