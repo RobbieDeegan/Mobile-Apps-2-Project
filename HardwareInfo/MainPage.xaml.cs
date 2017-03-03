@@ -38,9 +38,12 @@ namespace HardwareInfo
             pvtTitle.SelectedIndex = 0;
 
             // Populate the sounds
+            Sounds = new ObservableCollection<Sound>();
             SoundManager.getAllSounds(Sounds);
         }
 
+        // Setup the text to be displayed on each page
+        // Add all the describtions to a list to be outputted
         private void setupDescribtions()
         {
             if (_partsDesc != null)
@@ -49,6 +52,8 @@ namespace HardwareInfo
             }
             _partsDesc = new List<string>();
 
+            // Add each describtion
+            // About info
             _partsDesc.Add("Computers are everywhere wheter it be a desktop, laptop, tablet or phone. All come in different shapes, sizes and colours" +
                 " but at the end of the day they are all the same in terms of what makes them work. These devices will work perfectly and uninterupted" +
                 " unitl the hardware starts to fail or get older. When they start failing the whole system can slow down and cause serious performance" +
@@ -111,6 +116,7 @@ namespace HardwareInfo
 
             int i;
             TextBlock curr;
+            // Loop through the list of describtions to find the one needed
             for (i = 0; i <= 8; i++)
             {
                 curr = (TextBlock)pvtTitle.FindName("tblAbout" + i.ToString());
