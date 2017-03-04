@@ -1,5 +1,4 @@
-﻿using HardwareInfo.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -15,18 +14,11 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
 namespace HardwareInfo
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class MainPage : Page
     {
-        // reference to collection in SoundManager.cs
-        private ObservableCollection<Sound> Sounds;
 
         List<string> _partsDesc;
 
@@ -36,9 +28,6 @@ namespace HardwareInfo
             setupDescribtions();
             pvtTitle.SelectedIndex = 0;
 
-            // Populate the sounds
-            Sounds = new ObservableCollection<Sound>();
-            SoundManager.getAllSounds(Sounds);
         }
 
         // Setup the text to be displayed on each page
@@ -50,6 +39,8 @@ namespace HardwareInfo
                 return;
             }
             _partsDesc = new List<string>();
+
+            #region Adding the describtions to the list
 
             // Add each describtion
             // About info
@@ -109,9 +100,14 @@ namespace HardwareInfo
                 "Depending on how much power your parts need, you'll need more wattage from your power supply.");
 
             // Errors Info
-            _partsDesc.Add("As great as all these compnents can be, they become slow or useless if the break or expierence errors or bottlenecks that will slow them down." +
+            _partsDesc.Add("As great as all these compnents can be, they become slow or useless if they break or expierence errors or bottlenecks that will slow them down." +
                 " If you are having problems with your system, one of the vest ways to find out whats wrong is through a series of beeps that come from a small speaker that" +
-                " comes with a motherboard. Errors can be indentified by different beeps.");
+                " comes with a motherboard. Errors can be indentified by different beeps. This is the computers POST (Power On Self Test) function which ensure it meets the" +
+                " systems requirements and all the hardware is working properly before starting. Beeps can result from hardware changes or errors, power loss  ");
+
+            #endregion
+
+            #region Looping through describtions to display appropiate one
 
             int i;
             TextBlock curr;
@@ -124,8 +120,18 @@ namespace HardwareInfo
                     curr.Text = _partsDesc[i];
                 }
             } // end for 
+
+            #endregion
+
         } // endSetupDescribtions
 
+        #region All the setup for the button clicks
+
+        // Setting up all the buttons to play the sound whem clicked
+        // When the function is entered the media element is found it the xaml code
+        // which find the sound needed in the assets folder.
+        // The play play function is called to actually ouput the sound
+        // Adapted from http://stackoverflow.com/questions/31761038/audio-and-video-playing-in-windows-10-universal-app
         private void Single_Beep_Button_Click(object sender, RoutedEventArgs e)
         {
             singlebeep.Play();
@@ -155,5 +161,6 @@ namespace HardwareInfo
         {
             onelongtwoshort.Play();
         }
+        #endregion
     }
 }

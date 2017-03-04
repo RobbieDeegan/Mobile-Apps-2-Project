@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-04T17:57:59.299</Modified>
+      <Modified>2017-03-04T18:41:02.667</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\HardwareInfo.exe">
       <PackagePath>entrypoint\HardwareInfo.exe</PackagePath>
-      <Modified>2017-03-04T17:57:58.480</Modified>
+      <Modified>2017-03-04T18:41:01.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -549,11 +549,11 @@
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-04T17:57:59.064</Modified>
+      <Modified>2017-03-04T18:41:02.324</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\Core\HardwareInfo.exe">
       <PackagePath>HardwareInfo.exe</PackagePath>
-      <Modified>2017-03-04T17:57:59.293</Modified>
+      <Modified>2017-03-04T18:41:02.660</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -8,6 +8,8 @@
     xmlns:data="using:HardwareInfo.Model"
     mc:Ignorable="d">
 
+    <!--Grid containing all the images and textblocks with describtions-->
+    <!--Scrollviewer also set up to control scrolling between pages-->
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Assets/Images/backround.jpg" 
@@ -117,6 +119,7 @@
                             HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"
                             FontSize="17"  Margin="10,10,0,0" Grid.Column="1"/>
 
+                        <!--Adapted from http://stackoverflow.com/questions/31761038/audio-and-video-playing-in-windows-10-universal-app -->
                         <!--Setting up media elements to link to sound files-->
                         <MediaElement x:Name="singlebeep" AutoPlay="False"
                                       Source="Assets/Sounds/singlebeep.wav" />
