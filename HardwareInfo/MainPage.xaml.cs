@@ -126,14 +126,34 @@ namespace HardwareInfo
             } // end for 
         } // endSetupDescribtions
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Single_Beep_Button_Click(object sender, RoutedEventArgs e)
         {
             singlebeep.Play();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Two_Beep_Button_Click(object sender, RoutedEventArgs e)
         {
             twobeep.Play();
+        }
+
+        private void Triple_Beep_Button_Click(object sender, RoutedEventArgs e)
+        {
+            triplebeep.Play();
+        }
+
+        private void Triple_Long_Beep_Button_Click(object sender, RoutedEventArgs e)
+        {
+            triplelongbeep.Play();
+        }
+
+        private void One_One_Beep_Button_Click(object sender, RoutedEventArgs e)
+        {
+            onelongoneshort.Play();
+        }
+
+        private void One_Two_Button_Click(object sender, RoutedEventArgs e)
+        {
+            onelongtwoshort.Play();
         }
     }
 }

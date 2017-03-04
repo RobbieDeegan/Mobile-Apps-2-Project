@@ -117,14 +117,27 @@
                             HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"
                             FontSize="17"  Margin="10,10,0,0" Grid.Column="1"/>
 
+                        <!--Setting up media elements to link to sound files-->
                         <MediaElement x:Name="singlebeep" AutoPlay="False"
                                       Source="Assets/Sounds/singlebeep.wav" />
-
                         <MediaElement x:Name="twobeep" AutoPlay="False"
                                       Source="Assets/Sounds/twobeep.wav" />
+                        <MediaElement x:Name="triplebeep" AutoPlay="False"
+                                      Source="Assets/Sounds/triplebeep.wav" />
+                        <MediaElement x:Name="triplelongbeep" AutoPlay="False"
+                                      Source="Assets/Sounds/triplelongbeep.wav" />
+                        <MediaElement x:Name="onelongoneshort" AutoPlay="False"
+                                      Source="Assets/Sounds/1long1short.wav" />
+                        <MediaElement x:Name="onelongtwoshort" AutoPlay="False"
+                                      Source="Assets/Sounds/1long2short.wav" />
                         
-                        <Button Click="Button_Click">Play</Button>
-                        <Button Click="Button_Click_1">Play</Button>
+                        <!--Setting up buttons to play sounds-->
+                        <Button Click="Single_Beep_Button_Click">Play</Button>
+                        <Button Click="Two_Beep_Button_Click">Play</Button>
+                        <Button Click="Triple_Beep_Button_Click">Play</Button>
+                        <Button Click="Triple_Long_Beep_Button_Click">Play</Button>
+                        <Button Click="One_One_Beep_Button_Click">Play</Button>
+                        <Button Click="One_Two_Button_Click">Play</Button>
                         
                     </StackPanel>
                 </ScrollViewer>
