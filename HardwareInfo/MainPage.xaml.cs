@@ -29,7 +29,6 @@ namespace HardwareInfo
         private ObservableCollection<Sound> Sounds;
 
         List<string> _partsDesc;
-        private MediaElement PlayMusic;
 
         public MainPage()
         {
@@ -129,7 +128,12 @@ namespace HardwareInfo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            singlebeep.Play();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            twobeep.Play();
         }
     }
 }

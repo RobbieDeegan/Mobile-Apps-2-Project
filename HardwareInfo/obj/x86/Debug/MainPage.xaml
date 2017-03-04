@@ -14,7 +14,7 @@
                         Stretch="UniformToFill" Opacity="1" />
         </Grid.Background>
 
-        <Pivot x:Name="pvtTitle" Title="Computer Hardware" FontWeight="Bold">
+        <Pivot x:ConnectionId='1' x:Name="pvtTitle" Title="Computer Hardware" FontWeight="Bold">
 
             <PivotItem Header="About" >
                 <ScrollViewer>
@@ -22,7 +22,7 @@
                         <Image Source="Assets/Images/processor.jpg" Height="140" Width="228" 
                     HorizontalAlignment="Center" VerticalAlignment="Top"
                     Margin="10,10,10,0" />
-                        <TextBlock x:Name="tblAbout0" TextWrapping="Wrap" FontWeight="Bold"
+                        <TextBlock x:ConnectionId='13' x:Name="tblAbout0" TextWrapping="Wrap" FontWeight="Bold"
                     FontSize="17" HorizontalAlignment="Center"
                     Margin="10, 10, 10, 0" Grid.Column="1" />
                     </StackPanel>
@@ -35,7 +35,7 @@
                         <Image Source="Assets/Images/processor.jpg" Height="140" Width="228" 
                     HorizontalAlignment="Center" VerticalAlignment="Top"
                     Margin="10,10,10,0" />
-                        <TextBlock x:Name="tblAbout1" TextWrapping="Wrap" 
+                        <TextBlock x:ConnectionId='12' x:Name="tblAbout1" TextWrapping="Wrap" 
                         HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"
                         FontSize="17"  Margin="10,10,0,0" Grid.Column="1"/>
                     </StackPanel>
@@ -48,7 +48,7 @@
                         <Image Source="Assets/Images/motherboard.jpg" Height="140" Width="228" 
                     HorizontalAlignment="Center" VerticalAlignment="Top"
                     Margin="10,10,10,0" />
-                        <TextBlock x:Name="tblAbout2" TextWrapping="Wrap" 
+                        <TextBlock x:ConnectionId='11' x:Name="tblAbout2" TextWrapping="Wrap" 
                         HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"
                         FontSize="17"  Margin="10,10,0,0" Grid.Column="1"/>
                     </StackPanel>
@@ -61,7 +61,7 @@
                         <Image Source="Assets/Images/graphics.jpg" Height="140" Width="228" 
                     HorizontalAlignment="Center" VerticalAlignment="Top"
                     Margin="10,10,10,0" />
-                        <TextBlock x:Name="tblAbout3" TextWrapping="Wrap" 
+                        <TextBlock x:ConnectionId='10' x:Name="tblAbout3" TextWrapping="Wrap" 
                         HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"
                         FontSize="17"  Margin="10,10,0,0" Grid.Column="1"/>
                     </StackPanel>
@@ -74,7 +74,7 @@
                         <Image Source="Assets/Images/ram.jpeg" Height="140" Width="228" 
                     HorizontalAlignment="Center" VerticalAlignment="Top"
                     Margin="10,10,10,0" />
-                        <TextBlock x:Name="tblAbout4" TextWrapping="Wrap" 
+                        <TextBlock x:ConnectionId='9' x:Name="tblAbout4" TextWrapping="Wrap" 
                         HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"
                         FontSize="17"  Margin="10,10,0,0" Grid.Column="1"/>
                     </StackPanel>
@@ -87,7 +87,7 @@
                         <Image Source="Assets/Images/storage.jpg" Height="140" Width="228" 
                     HorizontalAlignment="Center" VerticalAlignment="Top"
                     Margin="10,10,10,0" />
-                        <TextBlock x:Name="tblAbout5" TextWrapping="Wrap" 
+                        <TextBlock x:ConnectionId='8' x:Name="tblAbout5" TextWrapping="Wrap" 
                         HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"
                         FontSize="17"  Margin="10,10,0,0" Grid.Column="1"/>
                     </StackPanel>
@@ -100,7 +100,7 @@
                         <Image Source="Assets/Images/power.jpg" Height="140" Width="228" 
                     HorizontalAlignment="Center" VerticalAlignment="Top"
                     Margin="10,10,10,0" />
-                        <TextBlock x:Name="tblAbout6" TextWrapping="Wrap" 
+                        <TextBlock x:ConnectionId='7' x:Name="tblAbout6" TextWrapping="Wrap" 
                         HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"
                         FontSize="17"  Margin="10,10,0,0" Grid.Column="1"/>
                     </StackPanel>
@@ -113,18 +113,18 @@
                         <Image Source="Assets/Images/error.jpg" Height="140" Width="228" 
                             HorizontalAlignment="Center" VerticalAlignment="Top"
                             Margin="10,10,10,0" />
-                        <TextBlock x:Name="tblAbout7" TextWrapping="Wrap" 
+                        <TextBlock x:ConnectionId='2' x:Name="tblAbout7" TextWrapping="Wrap" 
                             HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"
                             FontSize="17"  Margin="10,10,0,0" Grid.Column="1"/>
 
-                        <MediaElement x:Name="singlebeep" AutoPlay="False"
+                        <MediaElement x:ConnectionId='3' x:Name="singlebeep" AutoPlay="False"
                                       Source="Assets/Sounds/singlebeep.wav" />
 
-                        <MediaElement x:Name="twobeep" AutoPlay="False"
+                        <MediaElement x:ConnectionId='4' x:Name="twobeep" AutoPlay="False"
                                       Source="Assets/Sounds/twobeep.wav" />
                         
-                        <Button Click="Button_Click">Play</Button>
-                        <Button Click="Button_Click_1">Play</Button>
+                        <Button x:ConnectionId='5'                     >Play</Button>
+                        <Button x:ConnectionId='6'                       >Play</Button>
                         
                     </StackPanel>
                 </ScrollViewer>
@@ -133,3 +133,4 @@
 
     </Grid>
 </Page>
+

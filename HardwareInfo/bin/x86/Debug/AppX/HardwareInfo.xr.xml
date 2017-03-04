@@ -49,6 +49,10 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Margin" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">
+      <RootProperty Name="AutoPlay" />
+      <RootProperty Name="Source" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootEvent Name="Click" />
