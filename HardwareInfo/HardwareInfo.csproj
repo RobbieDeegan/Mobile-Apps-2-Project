@@ -115,9 +115,8 @@
     <Content Include="Assets\Images\storage.jpg" />
     <Content Include="Assets\Sounds\1long1short.wav" />
     <Content Include="Assets\Sounds\1long2short.wav" />
-    <Content Include="Assets\Sounds\longbeep.mp3" />
+    <Content Include="Assets\Sounds\longbeep.wav" />
     <Content Include="Assets\Sounds\singlebeep.wav" />
-    <Content Include="Assets\Sounds\triplebeep.wav" />
     <Content Include="Assets\Sounds\triplelongbeep.wav" />
     <Content Include="Assets\Sounds\twobeep.wav" />
     <Content Include="Properties\Default.rd.xml" />

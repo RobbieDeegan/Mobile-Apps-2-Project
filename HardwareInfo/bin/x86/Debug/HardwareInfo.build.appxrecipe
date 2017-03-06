@@ -358,20 +358,17 @@
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Sounds\1long2short.wav">
       <PackagePath>Assets\Sounds\1long2short.wav</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Sounds\longbeep.wav">
+      <PackagePath>Assets\Sounds\longbeep.wav</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Sounds\singlebeep.wav">
       <PackagePath>Assets\Sounds\singlebeep.wav</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Sounds\triplebeep.wav">
-      <PackagePath>Assets\Sounds\triplebeep.wav</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Sounds\triplelongbeep.wav">
       <PackagePath>Assets\Sounds\triplelongbeep.wav</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Sounds\twobeep.wav">
       <PackagePath>Assets\Sounds\twobeep.wav</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Sounds\longbeep.mp3">
-      <PackagePath>Assets\Sounds\longbeep.mp3</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

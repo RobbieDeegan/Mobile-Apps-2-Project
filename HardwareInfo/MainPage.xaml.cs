@@ -19,13 +19,14 @@ namespace HardwareInfo
 
     public sealed partial class MainPage : Page
     {
-
         List<string> _partsDesc;
+        List<string> _errorDesc;
 
         public MainPage()
         {
             this.InitializeComponent();
             setupDescribtions();
+            setupErrorDes();
             pvtTitle.SelectedIndex = 0;
 
         }
@@ -49,7 +50,7 @@ namespace HardwareInfo
                 " unitl the hardware starts to fail or get older. When they start failing the whole system can slow down and cause serious performance" +
                 " drops and danger of data being lost or being corrupted. These failures can be costly due to repair costs to replace parts and for" +
                 " someone to diagnose and fix the problem. The aim of this application is to help you understand what the hardware in your machine" +
-                " do and help to diagnose your own problems and help you to resolve them with a bit of research online.");
+                " does and help to diagnose your own problems and help you to resolve them with a bit of research online.");
 
             // Processor info
             _partsDesc.Add("The processor is the brain of your computer and handles all processes and applications. Depending on the speed of your processor" +
@@ -125,6 +126,48 @@ namespace HardwareInfo
 
         } // endSetupDescribtions
 
+        private void setupErrorDes()
+        {
+            if (_errorDesc != null)
+            {
+                return;
+            }
+            _errorDesc = new List<string>();
+
+            #region Adding information for the beep code errors
+
+            // Single Beep
+            _errorDesc.Add("A single beep followed by a normal boot up means everythings running fine! However theres a single beep followed by a blank screen you may have a video display problem");
+
+            // Two beeps
+            _errorDesc.Add("Two beeps is a post error and the error should appear on your screen");
+
+            // Triple long Beep
+            _errorDesc.Add("Three long beeps is most likely a keyboard error. Make sure your keyboard is plugged in properly. If not try another keyboard. If this error persists there may an IO proplem on your motherboard.");
+
+            // 1 long 1 short
+            _errorDesc.Add("One long beep followed by a shorter beep is a motherboard error caused by new hardware being installed, loose cables or a part being faulty or dead. Check each component by removing it and making sure its connected properly.");
+
+            // 1 long 2 short
+            _errorDesc.Add("One long beep followed by two shorter beeps is caused by a video card issue. Check that your graphics card is inserted properly. If the error continues the video card may be faulty.");
+
+            // Long beep
+            _errorDesc.Add("One long continuous beep will be caused by a loose card, power short or a lack of power going to the system. Make sure the power supply cables are all inserted correctly and theres enough power being provided.");
+
+            int i;
+            TextBlock curr2;
+            // Loop through the list of describtions to find the one needed
+            for (i = 0; i <= 5; i++)
+            {
+                curr2 = (TextBlock)pvtTitle.FindName("tblError" + i.ToString());
+                if (curr2 != null)
+                {
+                    curr2.Text = _errorDesc[i];
+                }
+            } // end for  
+            #endregion
+        }
+
         #region All the setup for the button clicks
 
         // Setting up all the buttons to play the sound whem clicked
@@ -142,11 +185,6 @@ namespace HardwareInfo
             twobeep.Play();
         }
 
-        private void Triple_Beep_Button_Click(object sender, RoutedEventArgs e)
-        {
-            triplebeep.Play();
-        }
-
         private void Triple_Long_Beep_Button_Click(object sender, RoutedEventArgs e)
         {
             triplelongbeep.Play();
@@ -161,6 +199,13 @@ namespace HardwareInfo
         {
             onelongtwoshort.Play();
         }
+
+        private void Long_Beep_Button_Click(object sender, RoutedEventArgs e)
+        {
+            longbeep.Play();
+        }
         #endregion
+
+       
     }
 }
