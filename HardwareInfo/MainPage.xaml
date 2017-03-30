@@ -20,7 +20,7 @@
             <PivotItem Header="About" >
                 <ScrollViewer>
                     <StackPanel>
-                        <Image Source="Assets/Images/processor.jpg" Height="140" Width="228" 
+                        <Image Source="Assets/Images/about.jpg" Height="140" Width="228" 
                             HorizontalAlignment="Center" VerticalAlignment="Top"
                             Margin="10,10,10,0" />
                         <TextBlock x:Name="tblAbout0" TextWrapping="Wrap" FontWeight="Bold"
@@ -108,10 +108,10 @@
                 </ScrollViewer>
             </PivotItem>
 
-            <PivotItem Header="Error">
+            <PivotItem Header="Errors">
                 <ScrollViewer>
                     <StackPanel>
-                        <Image Source="Assets/Images/error.jpg" Height="140" Width="228" 
+                        <Image Source="Assets/Images/error.jpg" Height="113" Width="228" 
                             HorizontalAlignment="Center" VerticalAlignment="Top"
                             Margin="10,10,10,0" />
                         <TextBlock x:Name="tblAbout7" TextWrapping="Wrap"
@@ -132,7 +132,7 @@
                                       Source="Assets/Sounds/1long2short.wav" />
                         <MediaElement x:Name="longbeep" AutoPlay="False"
                                       Source="Assets/Sounds/longbeep.wav" />
-                        
+
                         <!--Setting up textblock for the info and the buttons to play sounds-->
                         <TextBlock x:Name="tblError0" TextWrapping="Wrap"
                             HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"
@@ -163,11 +163,10 @@
                             HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"
                             FontSize="17"  Margin="10,10,0,0" Grid.Column="1"/>
                         <Button Click="Long_Beep_Button_Click" HorizontalAlignment="Center">Play Long Beep</Button>
-                        
+
                     </StackPanel>
                 </ScrollViewer>
             </PivotItem>
         </Pivot>
-
     </Grid>
 </Page>

@@ -107,9 +107,12 @@
     <None Include="HardwareInfo_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\about.jpg" />
     <Content Include="Assets\Images\backround.jpg" />
     <Content Include="Assets\Images\error.jpg" />
+    <Content Include="Assets\Images\graphics.jpg" />
     <Content Include="Assets\Images\motherboard.jpg" />
+    <Content Include="Assets\Images\power.jpg" />
     <Content Include="Assets\Images\processor.jpg" />
     <Content Include="Assets\Images\ram.jpeg" />
     <Content Include="Assets\Images\storage.jpg" />

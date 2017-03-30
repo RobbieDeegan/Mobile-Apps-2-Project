@@ -28,7 +28,6 @@ namespace HardwareInfo
             setupDescribtions();
             setupErrorDes();
             pvtTitle.SelectedIndex = 0;
-
         }
 
         // Setup the text to be displayed on each page
@@ -40,6 +39,7 @@ namespace HardwareInfo
                 return;
             }
             _partsDesc = new List<string>();
+            
 
             #region Adding the describtions to the list
 
@@ -73,7 +73,7 @@ namespace HardwareInfo
                 " can have in your system.");
 
             // Graphics Info
-            _partsDesc.Add("There are a few different methods of displaying the computer to your monitor. Most Mothernoards have on board graphics which" +
+            _partsDesc.Add("There are a few different methods of displaying the computer to your monitor. Most Motherboards have on board graphics which" +
                 " usually do the job. If your a gamer or need good graphics for modeling or editing, you may want better looking graphics and will need a graphics" +
                 " card. Again like processors, different cards will give you different performance in graphics. Games benefit greatly from more powerful" +
                 " graphics adn will make games look better. The more powerful the card, the better the graphics and physical effect. Lots of different company's make Graphics/Video cards. Alot of them use Nvidia's Geforce GTX technology. The cards with" +
@@ -97,14 +97,18 @@ namespace HardwareInfo
 
             // Power Info
             _partsDesc.Add("All your components will need power to run. This is where your power supply is needed. A power supply does exactly what you think. It supplies" +
-                "power to the componets. The supply is connected to the power outlet on your wall and cables run to different comonents with different connectors." +
-                "Depending on how much power your parts need, you'll need more wattage from your power supply.");
+                "power to the componets. The supply is connected to the power outlet on your wall and cables run to different comonents with different connectors. The motherboard" +
+                " is powered by a 24 pin cables for example. Theres a four pin cable that plugs in beside the processor slot that will power it. Then you'll need a sata power connecter to power the hard drives." + 
+                " The graphics card will be powered by either a 6 pin or an 8 pin depending on how powerful it is. Depending on how much power your parts need, you'll need more wattage from your power supply." +
+                " Fans can be powered by smaller fan headers on the motherboard. All the Buttons and lights on the front of the case will be powered from a set of 8 pins at the bottom of the motherboard." +
+                " This can be tricky to plug in as the all look the same so use the motherboards manual to make sure they're all plugged in properly.");
 
             // Errors Info
             _partsDesc.Add("As great as all these compnents can be, they become slow or useless if they break or expierence errors or bottlenecks that will slow them down." +
-                " If you are having problems with your system, one of the vest ways to find out whats wrong is through a series of beeps that come from a small speaker that" +
+                " If you are having problems with your system, one of the best ways to find out whats wrong is through a series of beeps that come from a small speaker that" +
                 " comes with a motherboard. Errors can be indentified by different beeps. This is the computers POST (Power On Self Test) function which ensure it meets the" +
-                " systems requirements and all the hardware is working properly before starting. Beeps can result from hardware changes or errors, power loss  ");
+                " systems requirements and all the hardware is working properly before starting. Beeps can result from hardware changes or errors, power loss, dead hardware including hardrives, motherboards or RAM." +
+                " Below are a number of beep codes that can occur on a system. These aren't all the beep codes errors, but they're probably some of the more common ones you'll hear. ");
 
             #endregion
 
@@ -206,6 +210,5 @@ namespace HardwareInfo
         }
         #endregion
 
-       
     }
 }

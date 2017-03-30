@@ -334,14 +334,23 @@
     <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Images\about.jpg">
+      <PackagePath>Assets\Images\about.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Images\backround.jpg">
       <PackagePath>Assets\Images\backround.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Images\error.jpg">
       <PackagePath>Assets\Images\error.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Images\graphics.jpg">
+      <PackagePath>Assets\Images\graphics.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Images\motherboard.jpg">
       <PackagePath>Assets\Images\motherboard.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Images\power.jpg">
+      <PackagePath>Assets\Images\power.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Images\processor.jpg">
       <PackagePath>Assets\Images\processor.jpg</PackagePath>
