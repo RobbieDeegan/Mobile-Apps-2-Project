@@ -13,6 +13,10 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Security.Authentication.Web;
+using winsdkfb;
+using winsdkfb.Graph;
+using System.Diagnostics;
 
 namespace HardwareInfo
 {
@@ -21,6 +25,8 @@ namespace HardwareInfo
     {
         List<string> _partsDesc;
         List<string> _errorDesc;
+
+        string SID = WebAuthenticationBroker.GetCurrentApplicationCallbackUri().ToString();
 
         public MainPage()
         {
@@ -210,5 +216,52 @@ namespace HardwareInfo
         }
         #endregion
 
+        // Setup for sharing to facebook
+        // Adapted from http://microsoft.github.io/winsdkfb/sample/
+        private async void MainLogin_Click(object sender, RoutedEventArgs e)
+        {
+            FBSession sess = FBSession.ActiveSession;
+            sess.FBAppId = "<223139641423993>";
+            sess.WinAppId = "<s-1-15-2-3097751537-2617460156-63370106-2036095025-3786947386-1211125068-2096569086>";
+            List<String> permissionList = new List<String>();
+            permissionList.Add("public_profile");
+            permissionList.Add("user_friends");
+            permissionList.Add("user_likes");
+            permissionList.Add("user_location");
+            permissionList.Add("user_photos");
+            permissionList.Add("publish_actions");
+            FBPermissions permissions = new FBPermissions(permissionList);
+
+            // Login to Facebook
+            FBResult result = await sess.LoginAsync(permissions);
+            if (result.Succeeded)
+            {
+                FBUser user = sess.User;
+                ProfilePic.UserId = sess.User.Id;
+                Debug.WriteLine(sess.User.Id);
+                Debug.WriteLine(sess.User.Name);
+            }
+            else
+            {
+                //Login failed
+            }
+        }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            
+            ElementSoundPlayer.Volume = 1.0f;
+        }
+
+        private void MenuButton2_Click(object sender, RoutedEventArgs e)
+        {
+            ElementSoundPlayer.Volume = 0.01f;
+
+        }
     }
 }

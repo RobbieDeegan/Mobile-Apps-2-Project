@@ -1877,6 +1877,113 @@
             "rid": "win8-aot"
           }
         }
+      },
+      "winsdkfb/0.13.20170131.2": {
+        "type": "package",
+        "compile": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "runtime": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win10-arm/native/winsdkfb.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/winsdkfb.pri": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/winsdkfb/Controls/FacebookLoginButton.xbf": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/winsdkfb/FacebookDialog.xbf": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/winsdkfb/FacebookProfilePictureControl.xbf": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/winsdkfb/Images/fb_blank_profile_portrait.png": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/winsdkfb/Themes/Generic.xbf": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/winsdkfb/Themes/Styles.xbf": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-x64/native/winsdkfb.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/winsdkfb.pri": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/winsdkfb/Controls/FacebookLoginButton.xbf": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/winsdkfb/FacebookDialog.xbf": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/winsdkfb/FacebookProfilePictureControl.xbf": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/winsdkfb/Images/fb_blank_profile_portrait.png": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/winsdkfb/Themes/Generic.xbf": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/winsdkfb/Themes/Styles.xbf": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/native/winsdkfb.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/winsdkfb.pri": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/winsdkfb/Controls/FacebookLoginButton.xbf": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/winsdkfb/FacebookDialog.xbf": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/winsdkfb/FacebookProfilePictureControl.xbf": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/winsdkfb/Images/fb_blank_profile_portrait.png": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/winsdkfb/Themes/Generic.xbf": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/winsdkfb/Themes/Styles.xbf": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
       }
     },
     "UAP,Version=v10.0/win10-arm": {
@@ -3620,6 +3727,25 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "winsdkfb/0.13.20170131.2": {
+        "type": "package",
+        "compile": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "runtime": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/winsdkfb.dll": {},
+          "runtimes/win10-arm/native/winsdkfb.pri": {},
+          "runtimes/win10-arm/native/winsdkfb/Controls/FacebookLoginButton.xbf": {},
+          "runtimes/win10-arm/native/winsdkfb/FacebookDialog.xbf": {},
+          "runtimes/win10-arm/native/winsdkfb/FacebookProfilePictureControl.xbf": {},
+          "runtimes/win10-arm/native/winsdkfb/Images/fb_blank_profile_portrait.png": {},
+          "runtimes/win10-arm/native/winsdkfb/Themes/Generic.xbf": {},
+          "runtimes/win10-arm/native/winsdkfb/Themes/Styles.xbf": {}
+        }
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
@@ -5319,6 +5445,25 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "winsdkfb/0.13.20170131.2": {
+        "type": "package",
+        "compile": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "runtime": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/winsdkfb.dll": {},
+          "runtimes/win10-arm/native/winsdkfb.pri": {},
+          "runtimes/win10-arm/native/winsdkfb/Controls/FacebookLoginButton.xbf": {},
+          "runtimes/win10-arm/native/winsdkfb/FacebookDialog.xbf": {},
+          "runtimes/win10-arm/native/winsdkfb/FacebookProfilePictureControl.xbf": {},
+          "runtimes/win10-arm/native/winsdkfb/Images/fb_blank_profile_portrait.png": {},
+          "runtimes/win10-arm/native/winsdkfb/Themes/Generic.xbf": {},
+          "runtimes/win10-arm/native/winsdkfb/Themes/Styles.xbf": {}
         }
       }
     },
@@ -7072,6 +7217,25 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "winsdkfb/0.13.20170131.2": {
+        "type": "package",
+        "compile": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "runtime": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/winsdkfb.dll": {},
+          "runtimes/win10-x64/native/winsdkfb.pri": {},
+          "runtimes/win10-x64/native/winsdkfb/Controls/FacebookLoginButton.xbf": {},
+          "runtimes/win10-x64/native/winsdkfb/FacebookDialog.xbf": {},
+          "runtimes/win10-x64/native/winsdkfb/FacebookProfilePictureControl.xbf": {},
+          "runtimes/win10-x64/native/winsdkfb/Images/fb_blank_profile_portrait.png": {},
+          "runtimes/win10-x64/native/winsdkfb/Themes/Generic.xbf": {},
+          "runtimes/win10-x64/native/winsdkfb/Themes/Styles.xbf": {}
+        }
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
@@ -8771,6 +8935,25 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "winsdkfb/0.13.20170131.2": {
+        "type": "package",
+        "compile": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "runtime": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/winsdkfb.dll": {},
+          "runtimes/win10-x64/native/winsdkfb.pri": {},
+          "runtimes/win10-x64/native/winsdkfb/Controls/FacebookLoginButton.xbf": {},
+          "runtimes/win10-x64/native/winsdkfb/FacebookDialog.xbf": {},
+          "runtimes/win10-x64/native/winsdkfb/FacebookProfilePictureControl.xbf": {},
+          "runtimes/win10-x64/native/winsdkfb/Images/fb_blank_profile_portrait.png": {},
+          "runtimes/win10-x64/native/winsdkfb/Themes/Generic.xbf": {},
+          "runtimes/win10-x64/native/winsdkfb/Themes/Styles.xbf": {}
         }
       }
     },
@@ -10524,6 +10707,25 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "winsdkfb/0.13.20170131.2": {
+        "type": "package",
+        "compile": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "runtime": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/winsdkfb.dll": {},
+          "runtimes/win10-x86/native/winsdkfb.pri": {},
+          "runtimes/win10-x86/native/winsdkfb/Controls/FacebookLoginButton.xbf": {},
+          "runtimes/win10-x86/native/winsdkfb/FacebookDialog.xbf": {},
+          "runtimes/win10-x86/native/winsdkfb/FacebookProfilePictureControl.xbf": {},
+          "runtimes/win10-x86/native/winsdkfb/Images/fb_blank_profile_portrait.png": {},
+          "runtimes/win10-x86/native/winsdkfb/Themes/Generic.xbf": {},
+          "runtimes/win10-x86/native/winsdkfb/Themes/Styles.xbf": {}
+        }
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
@@ -12223,6 +12425,25 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "winsdkfb/0.13.20170131.2": {
+        "type": "package",
+        "compile": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "runtime": {
+          "lib/win10/winsdkfb.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/winsdkfb.dll": {},
+          "runtimes/win10-x86/native/winsdkfb.pri": {},
+          "runtimes/win10-x86/native/winsdkfb/Controls/FacebookLoginButton.xbf": {},
+          "runtimes/win10-x86/native/winsdkfb/FacebookDialog.xbf": {},
+          "runtimes/win10-x86/native/winsdkfb/FacebookProfilePictureControl.xbf": {},
+          "runtimes/win10-x86/native/winsdkfb/Images/fb_blank_profile_portrait.png": {},
+          "runtimes/win10-x86/native/winsdkfb/Themes/Generic.xbf": {},
+          "runtimes/win10-x86/native/winsdkfb/Themes/Styles.xbf": {}
         }
       }
     }
@@ -15493,11 +15714,56 @@
         "runtime.json",
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
+    },
+    "winsdkfb/0.13.20170131.2": {
+      "sha512": "jXiW3Fb55hsL2rwQa04cJo2iE73b7uhtAjXH1i9FoOv8m/OCDURDdBqpveci+tMjNJybBwSt6RkNl3qXn/bUkQ==",
+      "type": "package",
+      "files": [
+        "build/native/winsdkfb.targets",
+        "lib/win10/design/winsdkfb.dll",
+        "lib/win10/design/winsdkfb.pri",
+        "lib/win10/winsdkfb.pri",
+        "lib/win10/winsdkfb.winmd",
+        "lib/win10/winsdkfb/Controls/FacebookLoginButton.xbf",
+        "lib/win10/winsdkfb/FacebookDialog.xbf",
+        "lib/win10/winsdkfb/FacebookProfilePictureControl.xbf",
+        "lib/win10/winsdkfb/Images/fb_blank_profile_portrait.png",
+        "lib/win10/winsdkfb/Themes/Generic.xbf",
+        "lib/win10/winsdkfb/Themes/Styles.xbf",
+        "runtimes/win10-arm/native/winsdkfb.dll",
+        "runtimes/win10-arm/native/winsdkfb.pri",
+        "runtimes/win10-arm/native/winsdkfb/Controls/FacebookLoginButton.xbf",
+        "runtimes/win10-arm/native/winsdkfb/FacebookDialog.xbf",
+        "runtimes/win10-arm/native/winsdkfb/FacebookProfilePictureControl.xbf",
+        "runtimes/win10-arm/native/winsdkfb/Images/fb_blank_profile_portrait.png",
+        "runtimes/win10-arm/native/winsdkfb/Themes/Generic.xbf",
+        "runtimes/win10-arm/native/winsdkfb/Themes/Styles.xbf",
+        "runtimes/win10-x64/native/winsdkfb.dll",
+        "runtimes/win10-x64/native/winsdkfb.pri",
+        "runtimes/win10-x64/native/winsdkfb/Controls/FacebookLoginButton.xbf",
+        "runtimes/win10-x64/native/winsdkfb/FacebookDialog.xbf",
+        "runtimes/win10-x64/native/winsdkfb/FacebookProfilePictureControl.xbf",
+        "runtimes/win10-x64/native/winsdkfb/Images/fb_blank_profile_portrait.png",
+        "runtimes/win10-x64/native/winsdkfb/Themes/Generic.xbf",
+        "runtimes/win10-x64/native/winsdkfb/Themes/Styles.xbf",
+        "runtimes/win10-x86/native/winsdkfb.dll",
+        "runtimes/win10-x86/native/winsdkfb.pri",
+        "runtimes/win10-x86/native/winsdkfb/Controls/FacebookLoginButton.xbf",
+        "runtimes/win10-x86/native/winsdkfb/FacebookDialog.xbf",
+        "runtimes/win10-x86/native/winsdkfb/FacebookProfilePictureControl.xbf",
+        "runtimes/win10-x86/native/winsdkfb/Images/fb_blank_profile_portrait.png",
+        "runtimes/win10-x86/native/winsdkfb/Themes/Generic.xbf",
+        "runtimes/win10-x86/native/winsdkfb/Themes/Styles.xbf",
+        "winsdkfb.0.13.20170131.2.nupkg.sha512",
+        "winsdkfb.githash.txt",
+        "winsdkfb.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0"
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
+      "winsdkfb >= 0.13.20170131.2"
     ],
     "UAP,Version=v10.0": []
   }

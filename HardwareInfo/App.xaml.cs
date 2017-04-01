@@ -30,6 +30,7 @@ namespace HardwareInfo
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            
         }
 
         /// <summary>

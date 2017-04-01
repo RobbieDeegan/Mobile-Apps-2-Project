@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:HardwareInfo"
+    xmlns:fbsdk="using:winsdkfb"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -10,15 +11,16 @@
     <!--Grid containing all the images and textblocks with describtions-->
     <!--Scrollviewer also set up to control scrolling between pages-->
     <Grid>
+
         <Grid.Background>
             <ImageBrush ImageSource="Assets/Images/backround.jpg" 
                         Stretch="UniformToFill" Opacity="0.5" />
         </Grid.Background>
 
-        <Pivot x:Name="pvtTitle" Title="Computer Hardware" FontWeight="Bold">
+        <Pivot x:Name="pvtTitle" FontWeight="Bold">
 
             <PivotItem Header="About" >
-                <ScrollViewer>
+                <ScrollViewer Margin="63,0,0,0">
                     <StackPanel>
                         <Image Source="Assets/Images/about.jpg" Height="140" Width="228" 
                             HorizontalAlignment="Center" VerticalAlignment="Top"
@@ -26,11 +28,12 @@
                         <TextBlock x:Name="tblAbout0" TextWrapping="Wrap" FontWeight="Bold"
                             FontSize="17" HorizontalAlignment="Center"
                             Margin="10, 10, 10, 0" Grid.Column="1" />
+                        <Button Click="MainLogin_Click" HorizontalAlignment="Center">Facebook</Button>
                     </StackPanel>
                 </ScrollViewer>
             </PivotItem>
 
-            <PivotItem Header="Processor">
+            <PivotItem Header="Processor" Margin="64,0,12,0">
                 <ScrollViewer>
                     <StackPanel>
                         <Image Source="Assets/Images/processor.jpg" Height="140" Width="228" 
@@ -43,7 +46,7 @@
                 </ScrollViewer>
             </PivotItem>
 
-            <PivotItem Header="Motherboard">
+            <PivotItem Header="Motherboard" Margin="63,0,12,0">
                 <ScrollViewer>
                     <StackPanel>
                         <Image Source="Assets/Images/motherboard.jpg" Height="140" Width="228" 
@@ -56,7 +59,7 @@
                 </ScrollViewer>
             </PivotItem>
 
-            <PivotItem Header="Graphics">
+            <PivotItem Header="Graphics" Margin="67,0,12,0">
                 <ScrollViewer>
                     <StackPanel>
                         <Image Source="Assets/Images/graphics.jpg" Height="140" Width="228" 
@@ -69,7 +72,7 @@
                 </ScrollViewer>
             </PivotItem>
 
-            <PivotItem Header="RAM">
+            <PivotItem Header="RAM" Margin="65,0,12,0">
                 <ScrollViewer>
                     <StackPanel>
                         <Image Source="Assets/Images/ram.jpeg" Height="140" Width="228" 
@@ -82,7 +85,7 @@
                 </ScrollViewer>
             </PivotItem>
 
-            <PivotItem Header="Storage">
+            <PivotItem Header="Storage" Margin="69,0,12,0">
                 <ScrollViewer>
                     <StackPanel>
                         <Image Source="Assets/Images/storage.jpg" Height="140" Width="228" 
@@ -95,7 +98,7 @@
                 </ScrollViewer>
             </PivotItem>
 
-            <PivotItem Header="Power">
+            <PivotItem Header="Power" Margin="66,0,12,0">
                 <ScrollViewer>
                     <StackPanel>
                         <Image Source="Assets/Images/power.jpg" Height="140" Width="228" 
@@ -108,7 +111,7 @@
                 </ScrollViewer>
             </PivotItem>
 
-            <PivotItem Header="Errors">
+            <PivotItem Header="Errors" Margin="66,0,12,0">
                 <ScrollViewer>
                     <StackPanel>
                         <Image Source="Assets/Images/error.jpg" Height="113" Width="228" 
@@ -121,7 +124,8 @@
                         <!--Adapted from http://stackoverflow.com/questions/31761038/audio-and-video-playing-in-windows-10-universal-app -->
                         <!--Setting up media elements to link to sound files-->
                         <MediaElement x:Name="singlebeep" AutoPlay="False"
-                                      Source="Assets/Sounds/singlebeep.wav" />
+                                      Source="Assets/Sounds/singlebeep.wav" 
+                                      AreTransportControlsEnabled="True"/>
                         <MediaElement x:Name="twobeep" AutoPlay="False"
                                       Source="Assets/Sounds/twobeep.wav" />
                         <MediaElement x:Name="triplelongbeep" AutoPlay="False"
@@ -168,5 +172,26 @@
                 </ScrollViewer>
             </PivotItem>
         </Pivot>
+        <Grid HorizontalAlignment="Left" Height="380" Margin="0,117,0,0" VerticalAlignment="Top" Width="100"/>
+        <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
+               CompactPaneLength="50" OpenPaneLength="150" Margin="0,43,0,-43">
+            <SplitView.Pane>
+                <StackPanel Background="Gray">
+                    <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
+                    Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="MenuButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE825;"
+                    Width="50" Height="50" Background="Transparent"/>
+                        <TextBlock Text="Button 1" FontSize="18" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;"
+                        Width="50" Height="50" Background="Transparent"/>
+                        <TextBlock Text="Button 2" FontSize="18" VerticalAlignment="Center" />
+                    </StackPanel>
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
+
     </Grid>
 </Page>
