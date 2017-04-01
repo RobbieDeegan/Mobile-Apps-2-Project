@@ -237,7 +237,6 @@ namespace HardwareInfo
             if (result.Succeeded)
             {
                 FBUser user = sess.User;
-                ProfilePic.UserId = sess.User.Id;
                 Debug.WriteLine(sess.User.Id);
                 Debug.WriteLine(sess.User.Name);
             }
@@ -247,21 +246,19 @@ namespace HardwareInfo
             }
         }
 
-        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        private async void Post_Click(object sender, RoutedEventArgs e)
         {
-            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
-        }
-
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-            
-            ElementSoundPlayer.Volume = 1.0f;
-        }
-
-        private void MenuButton2_Click(object sender, RoutedEventArgs e)
-        {
-            ElementSoundPlayer.Volume = 0.01f;
-
+            FBSession sess = FBSession.ActiveSession;
+            if (sess.LoggedIn)
+            {
+                // Set caption, link and description parameters
+                PropertySet parameters = new PropertySet();
+                parameters.Add("title", "Computer Hardware App");
+                parameters.Add("link", "https://www.microsoft.com/en-us/default.aspx");
+                parameters.Add("description", "Windows Store Hardware App");
+                // Display feed dialog
+                FBResult fbresult = await sess.ShowFeedDialogAsync(parameters);
+            }
         }
     }
 }

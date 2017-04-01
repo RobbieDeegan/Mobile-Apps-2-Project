@@ -334,6 +334,30 @@
     <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb.dll">
+      <PackagePath>winsdkfb.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\Controls\FacebookLoginButton.xbf">
+      <PackagePath>FacebookLoginButton.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\FacebookDialog.xbf">
+      <PackagePath>FacebookDialog.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\FacebookProfilePictureControl.xbf">
+      <PackagePath>FacebookProfilePictureControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\Themes\Generic.xbf">
+      <PackagePath>Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\Themes\Styles.xbf">
+      <PackagePath>Styles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\Images\fb_blank_profile_portrait.png">
+      <PackagePath>fb_blank_profile_portrait.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\lib\win10\winsdkfb.winmd">
+      <PackagePath>winsdkfb.winmd</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Images\about.jpg">
       <PackagePath>Assets\Images\about.jpg</PackagePath>
     </AppxPackagedFile>
@@ -414,6 +438,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\Images\fb_blank_profile_portrait.png">
+      <PackagePath>winsdkfb\Images\fb_blank_profile_portrait.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

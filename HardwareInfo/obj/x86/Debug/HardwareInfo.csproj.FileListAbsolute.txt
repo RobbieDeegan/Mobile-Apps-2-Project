@@ -189,4 +189,13 @@ C:\Mobile App 2\HardwareInfo\HardwareInfo\obj\x86\Debug\qualifiers.txt
 C:\Mobile App 2\HardwareInfo\HardwareInfo\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Mobile App 2\HardwareInfo\HardwareInfo\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Mobile App 2\HardwareInfo\HardwareInfo\obj\x86\Debug\ProjectArchitectures.txt
-C:\Mobile App 2\HardwareInfo\HardwareInfo\obj\x86\Debug\HardwareInfo.csprojResolveAssemblyReference.cache
+C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\winsdkfb.dll
+C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\winsdkfb.pri
+C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\FacebookLoginButton.xbf
+C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\FacebookDialog.xbf
+C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\FacebookProfilePictureControl.xbf
+C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\fb_blank_profile_portrait.png
+C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\Generic.xbf
+C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\Styles.xbf
+C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\winsdkfb.winmd
+C:\Mobile App 2\HardwareInfo\HardwareInfo\obj\x86\Debug\winsdkfb.pri.xml

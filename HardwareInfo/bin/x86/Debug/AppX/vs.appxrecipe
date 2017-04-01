@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>6650231C7D55EF1832A1F3E9AA2A5DD2A8857688A66B3E7EBA145994F23D3808</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>516235D6326B96CC68846DEC4D20FBE318D8306063318CF6F8DCA707448C4641</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c90ce36d-d99c-44fd-98ab-4e7134de24f6_1.0.0.0_x86__zt37qcyp4wq36</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c90ce36d-d99c-44fd-98ab-4e7134de24f6_zt37qcyp4wq36!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c90ce36d-d99c-44fd-98ab-4e7134de24f6</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-30T15:59:28.212</Modified>
+      <Modified>2017-04-01T14:48:01.138</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\HardwareInfo.exe">
       <PackagePath>entrypoint\HardwareInfo.exe</PackagePath>
-      <Modified>2017-03-30T15:59:27.847</Modified>
+      <Modified>2017-04-01T14:47:58.749</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -448,6 +448,38 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T22:11:12.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb.dll">
+      <PackagePath>winsdkfb.dll</PackagePath>
+      <Modified>2017-01-31T14:46:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\Controls\FacebookLoginButton.xbf">
+      <PackagePath>FacebookLoginButton.xbf</PackagePath>
+      <Modified>2017-01-31T14:46:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\FacebookDialog.xbf">
+      <PackagePath>FacebookDialog.xbf</PackagePath>
+      <Modified>2017-01-31T14:46:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\FacebookProfilePictureControl.xbf">
+      <PackagePath>FacebookProfilePictureControl.xbf</PackagePath>
+      <Modified>2017-01-31T14:46:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\Themes\Generic.xbf">
+      <PackagePath>Generic.xbf</PackagePath>
+      <Modified>2017-01-31T14:46:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\Themes\Styles.xbf">
+      <PackagePath>Styles.xbf</PackagePath>
+      <Modified>2017-01-31T14:46:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\Images\fb_blank_profile_portrait.png">
+      <PackagePath>fb_blank_profile_portrait.png</PackagePath>
+      <Modified>2017-01-31T14:46:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\lib\win10\winsdkfb.winmd">
+      <PackagePath>winsdkfb.winmd</PackagePath>
+      <Modified>2017-01-31T14:46:16.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\Assets\Images\about.jpg">
       <PackagePath>Assets\Images\about.jpg</PackagePath>
       <Modified>2017-03-16T13:23:22.861</Modified>
@@ -548,20 +580,24 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\HardwareInfo.xr.xml">
       <PackagePath>HardwareInfo.xr.xml</PackagePath>
-      <Modified>2017-03-30T15:37:33.675</Modified>
+      <Modified>2017-04-01T14:37:52.824</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-01-17T08:04:55.282</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\winsdkfb\0.13.20170131.2\runtimes\win10-x86\native\winsdkfb\Images\fb_blank_profile_portrait.png">
+      <PackagePath>winsdkfb\Images\fb_blank_profile_portrait.png</PackagePath>
+      <Modified>2017-01-31T14:46:16.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-30T15:37:34.434</Modified>
+      <Modified>2017-04-01T14:47:59.787</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\Core\HardwareInfo.exe">
       <PackagePath>HardwareInfo.exe</PackagePath>
-      <Modified>2017-03-30T15:59:28.204</Modified>
+      <Modified>2017-04-01T14:48:01.127</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
