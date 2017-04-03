@@ -19,7 +19,7 @@
 
         <Pivot x:ConnectionId='1' x:Name="pvtTitle" FontWeight="Bold">
 
-            <PivotItem Header="About" >
+            <PivotItem Header="About">
                 <ScrollViewer Margin="0">
                     <StackPanel>
                         <Image Source="Assets/Images/about.jpg" Height="140" Width="228" 

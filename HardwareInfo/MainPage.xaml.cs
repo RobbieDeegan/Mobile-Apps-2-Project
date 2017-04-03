@@ -17,6 +17,7 @@ using Windows.Security.Authentication.Web;
 using winsdkfb;
 using winsdkfb.Graph;
 using System.Diagnostics;
+using Windows.Storage;
 
 namespace HardwareInfo
 {
@@ -25,6 +26,8 @@ namespace HardwareInfo
     {
         List<string> _partsDesc;
         List<string> _errorDesc;
+        string listLocation = " ";
+        
 
         string SID = WebAuthenticationBroker.GetCurrentApplicationCallbackUri().ToString();
 
@@ -33,7 +36,13 @@ namespace HardwareInfo
             this.InitializeComponent();
             setupDescribtions();
             setupErrorDes();
-            pvtTitle.SelectedIndex = 0;
+
+
+            var localStorage = ApplicationData.Current.LocalSettings;
+            if (localStorage.Values.ContainsKey(listLocation))
+                localStorage.Values[listLocation] = pvtTitle.SelectedIndex;
+            else
+                pvtTitle.SelectedIndex = 0;
         }
 
         // Setup the text to be displayed on each page
@@ -125,7 +134,12 @@ namespace HardwareInfo
             // Loop through the list of describtions to find the one needed
             for (i = 0; i <= 8; i++)
             {
+                
                 curr = (TextBlock)pvtTitle.FindName("tblAbout" + i.ToString());
+
+                var localStorage = ApplicationData.Current.LocalSettings;
+                localStorage.Values[listLocation] = i;
+
                 if (curr != null)
                 {
                     curr.Text = _partsDesc[i];
