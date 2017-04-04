@@ -27,8 +27,14 @@ namespace HardwareInfo
         List<string> _partsDesc;
         List<string> _errorDesc;
         string listLocation = " ";
-        
 
+        // Set up for local storage
+        ApplicationDataContainer localSettings =
+        ApplicationData.Current.LocalSettings;
+        StorageFolder localFolder =
+        ApplicationData.Current.LocalFolder;
+
+        // FAcebook login setup
         string SID = WebAuthenticationBroker.GetCurrentApplicationCallbackUri().ToString();
 
         public MainPage()
@@ -37,10 +43,10 @@ namespace HardwareInfo
             setupDescribtions();
             setupErrorDes();
 
-
-            var localStorage = ApplicationData.Current.LocalSettings;
-            if (localStorage.Values.ContainsKey(listLocation))
-                localStorage.Values[listLocation] = pvtTitle.SelectedIndex;
+            // Setting up local storage to hold the value of the selectedIndex
+            if (localSettings.Values.ContainsKey(listLocation))
+                localSettings.Values[listLocation] = pvtTitle.SelectedIndex;
+            // If no value is stored just use 0 and go to first screen
             else
                 pvtTitle.SelectedIndex = 0;
         }
@@ -54,7 +60,6 @@ namespace HardwareInfo
                 return;
             }
             _partsDesc = new List<string>();
-            
 
             #region Adding the describtions to the list
 
@@ -134,11 +139,10 @@ namespace HardwareInfo
             // Loop through the list of describtions to find the one needed
             for (i = 0; i <= 8; i++)
             {
-                
                 curr = (TextBlock)pvtTitle.FindName("tblAbout" + i.ToString());
 
-                var localStorage = ApplicationData.Current.LocalSettings;
-                localStorage.Values[listLocation] = i;
+                // Saving current location of app to local storage
+                localSettings.Values["listLocation"] = i;
 
                 if (curr != null)
                 {
@@ -260,6 +264,7 @@ namespace HardwareInfo
             }
         }
 
+        // Poat to facebook feed
         private async void Post_Click(object sender, RoutedEventArgs e)
         {
             FBSession sess = FBSession.ActiveSession;

@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-03T12:50:47.607</Modified>
+      <Modified>2017-04-04T14:02:16.303</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\HardwareInfo.exe">
       <PackagePath>entrypoint\HardwareInfo.exe</PackagePath>
-      <Modified>2017-04-03T12:50:47.074</Modified>
+      <Modified>2017-04-04T14:02:14.246</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Robbie\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -580,7 +580,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\HardwareInfo.xr.xml">
       <PackagePath>HardwareInfo.xr.xml</PackagePath>
-      <Modified>2017-04-01T14:37:52.824</Modified>
+      <Modified>2017-04-03T14:18:36.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -593,11 +593,11 @@
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-03T12:47:03.538</Modified>
+      <Modified>2017-04-04T14:02:14.818</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\Core\HardwareInfo.exe">
       <PackagePath>HardwareInfo.exe</PackagePath>
-      <Modified>2017-04-03T12:50:47.533</Modified>
+      <Modified>2017-04-04T14:02:16.283</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

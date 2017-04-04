@@ -199,3 +199,4 @@ C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\Generic.xbf
 C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\Styles.xbf
 C:\Mobile App 2\HardwareInfo\HardwareInfo\bin\x86\Debug\winsdkfb.winmd
 C:\Mobile App 2\HardwareInfo\HardwareInfo\obj\x86\Debug\winsdkfb.pri.xml
+C:\Mobile App 2\HardwareInfo\HardwareInfo\obj\x86\Debug\HardwareInfo.csprojResolveAssemblyReference.cache
